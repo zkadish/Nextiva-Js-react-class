@@ -14,7 +14,12 @@
   &__output {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
     font-size: 150px;
+  }
+  &__buttons {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
   }
 }

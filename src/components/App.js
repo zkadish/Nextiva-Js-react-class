@@ -2,6 +2,8 @@ import React from 'react';
 import { increment, decrement } from '../actions';
 import { connect } from 'react-redux';
 
+import { Button } from '@nextiva/next-ui';
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -21,13 +23,17 @@ class App extends React.Component {
         <div className="app-container__output">
           {counter}
         </div>
-        <div className="app-container__increment">
-          <button
+        <div className="app-container__buttons">
+          <Button
             onClick={increment}
-          >increment</button>
-          <button
+          >
+            increment
+          </Button>
+          <Button
             onClick={decrement}
-          >decrement</button>
+          >
+            decrement
+          </Button>
         </div>
       </div>
     )

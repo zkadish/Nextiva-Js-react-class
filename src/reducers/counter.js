@@ -13,7 +13,6 @@ export const counter = (state = { counter: 0 }, action) => {
         counter: state.counter - 1
       }
     default:
-      debugger
       return state;
   }
 }
